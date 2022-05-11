@@ -16,13 +16,11 @@ spec:
       skipCrds: true
       values: |
         grafana:
-          adminPassword: admin
+          #adminPassword: admin
           ingress:
             enabled: true
-            #ingressClassName: nginx
             annotations: 
               kubernetes.io/ingress.class: nginx
-              # kubernetes.io/tls-acme: "true"
             labels: {}
             hosts:
               - grafana.127.0.0.1.nip.io
