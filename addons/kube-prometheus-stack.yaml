@@ -14,7 +14,7 @@ spec:
     helm:
       releaseName: kube-prometheus-stack
       skipCrds: true
-      values:
+      values: |
         grafana:
           adminPassword: admin
   destination:
