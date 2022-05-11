@@ -14,6 +14,9 @@ spec:
     helm:
       releaseName: kube-prometheus-stack
       skipCrds: true
+      values:
+        grafana:
+          adminPassword: admin
   destination:
     server: "https://kubernetes.default.svc"
     namespace: prometheus
