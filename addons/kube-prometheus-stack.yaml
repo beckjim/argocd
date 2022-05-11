@@ -13,6 +13,7 @@ spec:
     targetRevision: 35.2.0
     helm:
       releaseName: kube-prometheus-stack
+      skipCrds: true
   destination:
     server: "https://kubernetes.default.svc"
     namespace: prometheus
