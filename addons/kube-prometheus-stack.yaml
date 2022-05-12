@@ -16,7 +16,7 @@ spec:
       skipCrds: true
       values: |
         grafana:
-          #adminPassword: admin
+          adminPassword: admin
           ingress:
             enabled: true
             annotations: 
